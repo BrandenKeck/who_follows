@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<HEAD>
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<TITLE>Who Follows</TITLE>
+	<link href="res/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="res/css/twitStyles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="res/img/bmkicon.png">
+	<script src="res/js/jquery.js"></script>
+	<script src="res/js/main.js"></script>
+	<script src="res/js/bootstrap.min.js"></script>
+</HEAD>
+<BODY>
+<DIV class="container-fluid">
+	<div class="row" id="header">
+		<div class="col-xs-0 col-sm-3"></div>
+		<div class="col-xs-12 col-sm-6">
+			<div>
+				<img class="headImg" src="res/img/whofollows.png" />
+				<br />
+				<p class="disclaimer">*Disclaimer: I don't personally endorse any of these accounts.</p>
+			</div>
+		</div>
+		<div class="col-xs-0 col-sm-3"></div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-7">
+			<div class="twitBox">
+				<p class="pText">Live Feed:</p>
+				<hr class="iRule">
+				<div id="liveFeed"></div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-5">
+			<div class="twitBox">
+				<p class="pText">Currently Following</p>
+				<hr class="iRule">
+				<div class="row" id="currentlyFollowing">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-9"><p class="pTextSmall">Loading...</p></div>
+				</div>
+			</div>
+			<div class="twitBox">
+				<p class="pText">Previous Target</p>
+				<hr class="iRule">
+				<div class="row" id="previouslyFollowing">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-9"><p class="pTextSmall">Loading...</p></div>
+				</div>
+				<br />
+				<a href="./WhoFollowsArchive.html"><b>View Full Follow History</b></a>
+			</div>
+			<!-- <div class="twitBox">
+				<p class="pText">Current Location</p>
+				<hr class="iRule">
+				<p class="pText" id="userLocation"><b>[Pittsburgh, PA]</b></p>
+			</div> -->
+		</div>
+	</div>
+	<div class="row">
+		<div class="twitBox" id="instructions">
+			<p class="pText">About This Application:</p>
+			<hr class="iRule">
+			<p class="pTextSmall">
+				This is a text-based application based on the film, <i>It Follows</i>.  Here is how it works: a hypothetical monster begins "chasing" a random person from Twitter.  Then, the monster can either be passed on to one of that person's followers or, if the monster catches them, it will revert back to its previous target.  The monster's actions as well as a list of targets can be tracked above.  This is a fully automated Twitter "bot" that runs using Node.js and various front-end technologies.
+			<p>
+		</div>
+	</div>
+</DIV>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBQDcLmR9m3pyC41J0-uA_oqMf3B0xkh2M",
+    authDomain: "twitter-application-a3516.firebaseapp.com",
+    databaseURL: "https://twitter-application-a3516.firebaseio.com",
+    storageBucket: "twitter-application-a3516.appspot.com",
+    messagingSenderId: "1033461555147"
+  };
+  firebase.initializeApp(config);
+</script>
+</BODY>
+</HTML>

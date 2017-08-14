@@ -1,0 +1,27 @@
+{
+  "name": "who_follows",
+  "version": "1.0.0",
+  "description": "Practice with backend technology and REST API",
+  "main": "getFollows.js",
+  "scripts": {
+    "start": "node --max-old-space-size=2048 getFollows.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+	"bot",
+	"node",
+	"firebase"
+  ],
+  "author": "Branden Keck",
+  "license": "MIT",
+  "engines" : {"node" : "4.8.4"},
+  "dependencies": {
+    "firebase-admin": "^4.1.0",
+    "twit": "^2.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrandenKeck/WhoFollows"
+  }
+}

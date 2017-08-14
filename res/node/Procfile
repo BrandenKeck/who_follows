@@ -1,0 +1,1 @@
+worker: node --max-old-space-size=2048 getFollows.js

@@ -1,0 +1,114 @@
+/*general*/
+body{
+	background-color: #326ada;
+}
+
+/*font import*/
+@font-face{
+	font-family: Tahoma;
+	src: url(../fonts/Tahoma.ttf);
+}
+
+/*external script*/
+.bwWrapper {
+    position:relative;
+    display:block;
+	float: right;
+}
+
+/*divs*/
+#header{
+	margin-bottom: 15px;
+	text-align: center;
+	overflow:none;
+	background-image: url("../img/background.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.twitBox{
+	display: table;
+	margin: auto;
+	background-color: #d4d8d4;
+	border: solid 5px #433e90;
+	border-radius: 15px;
+	width: 97%;
+	padding: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+#liveFeed{
+	width: 100%;
+	background-color: black;
+	text-align: left;
+	height: 400px;
+	overflow: scroll;
+	padding: 10px;
+}
+.padBottom{
+	padding-bottom: 10px;
+}
+
+/*images*/
+.headImg{
+	width: 55%;
+}
+.profile{
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+}
+
+/*text*/
+.alignLeft{text-align: left;}
+.alignRight{text-align: right;}
+.titleText{
+	font-family: Tahoma;
+	font-size: 48px;
+	color: black;
+}
+.pText{
+	font-family: Tahoma;
+	font-size: 28px;
+	color: black;
+}
+.pTextSmall{
+	font-family: Tahoma;
+	font-size: 16px;
+	color: black;
+	text-align: left;
+}
+.timestamp{
+	font-family: Tahoma;
+	font-size: 14px;
+	color: red;
+	display: inline;
+}
+.message{
+	font-family: Tahoma;
+	font-size: 14px;
+	color: white;
+	display: inline;
+}
+.userText{
+	font-family: Tahoma;
+	font-size: 14px;
+	color: green;
+	display: inline;
+}
+
+/*remove*/
+.disclaimer{
+	font-family: Tahoma;
+	background-color: black;
+	font-size: 14px;
+	color: red;
+	display: inline;
+}
+
+/*hr*/
+.iRule{
+	border: 1px solid #a19c9c;
+	width: 90%;
+}
